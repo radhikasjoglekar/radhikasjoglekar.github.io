@@ -143,64 +143,7 @@ div.circle ul li a {
 	align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-
-	.wrapper .static-txt {
-		font-size: 40px;
-		color: black;
-		font-weight: 600;
-		line-height: 80px;
-	}
-
-	.wrapper .dynamic-txts {
-		margin-left: 1px;
-		line-height: 80px;
-		height: 100px;
-		overflow: hidden !important;
-	}
-
-	.dynamic-txts li{
-		list-style: none;
-		color: #ffbf69;
-		font-size: 40px;
-		font-weight: 600;
-		top: 0;
-		position: relative;
-		animation: slide 20s steps(5)
-		infinite;
-	}
-
-	@keyframes slide {
-		100%  {
-			top: -400px;
-		}
-	}
-
-	.dynamic-txts li {
-		position: relative;
-	}
-
-	.dynamic-txts li::after {
-		content: "";
-		position: absolute;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		background-color: #f8f9fa;
-		border-left: 2px solid #ffbf69;
-		animation: typing 4s steps(10)
-		infinite;
-	}
-
-	@keyframes typing {
-		40%,
-		60% {
-			left: calc(100% + 30px);
-		}
-		100% {
-			left: 0;
-		}
-	}
+@media screen {
 
 }
 
