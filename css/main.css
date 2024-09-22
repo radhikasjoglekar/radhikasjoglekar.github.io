@@ -153,7 +153,7 @@ div.circle ul li a {
 	color: #ffbf69;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 	.wrapper .static-txt {
 		font-size: 30px;
 		color: black;
@@ -178,7 +178,7 @@ div.circle ul li a {
 		animation: slide 20s steps(5)
 		infinite;
 	}
-  }
+  } */
 
 /* Footer CSS */
 footer {
