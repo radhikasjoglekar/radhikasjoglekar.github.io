@@ -44,9 +44,9 @@
   </head>
   <body>
 
-	<div class="container my-4 ">
+	<div class="container my-4 main-hero">
 		<div class="row">
-			<div class="col-sm-8 my-5">
+			<!-- <div class="col-sm-8 my-5">
 				<span style="font-size: 40px;">Hi! I am Radhika,</span>
 				<div class="wrapper">
 					<div class="static-txt">I'm</div>
@@ -63,19 +63,31 @@
 						<li>
 							<span>an Artist.</span>
 						</li>
-						<!-- <li>
+						<li>
 							<span>a Cooking Enthusiast</span>
-						</li> -->
+						</li>
 					</ul>
 				</div>
+			</div> -->
+			<div class="col-sm-8 my-5">
+				<h1 class="hero-h1">
+					I'm <span class="auto-type"></span>
+				</h1>
 			</div>
-
 			<div class="col-sm-4">
 				<img src="images/Profile.png" class="img-fluid hero-image" alt="Responsive image">
 			</div>
 		  </div>
 	  </div>
-
+	  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	  <script>
+		var typed = new Typed(".auto-type", {
+			strings : ["an Interaction Designer","a UX Researcher", "a UI Developer", "an Artist", "a Cooking Enthusiast"],
+			typeSpeed: 150,
+			backSpeed: 150,
+			looped: true,
+		})
+	  </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -78,7 +78,7 @@ div.circle ul li a {
 }
 
 /* Hero Section */
-.wrapper {
+/* .wrapper {
 	display: flex;
 }
 
@@ -141,6 +141,16 @@ div.circle ul li a {
 
 .hero-image {
 	align-items: center;
+} */
+
+
+.hero-h1 {
+	color: black;
+	font-size: 40px;
+}
+
+.hero-h1 span {
+	color: #ffbf69;
 }
 
 @media screen and (max-width: 600px) {
