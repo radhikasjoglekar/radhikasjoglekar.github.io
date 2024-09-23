@@ -1,6 +1,6 @@
 body {
 	font-family: "Lato", sans-serif;
-	background-color: #f8f9fa!important;
+	/* background-color: #f8f9fa!important; */
 }
 
 .nav-link {
@@ -143,15 +143,77 @@ div.circle ul li a {
 	align-items: center;
 } */
 
-
+.main-hero{
+	background-color: #f8f9fa!important;
+}
 .hero-h1 {
-	color: black;
+	color: #101319;
 	font-size: 40px;
+	font-weight: 700;
 }
 
-.hero-h1 span {
-	color: #ffbf69!important;
+.hero-image {
+	width: 12vw;
 }
+
+.hero-subtext {
+	font-weight: 500;
+	margin: 1vw 19vw 2vw 0vw;
+	font-size: 23px;
+	margin-right: 12vw;
+	color: #343a40;
+}
+.hero-h1 span {
+	color: #80b918!important;
+	font-weight: 700;
+}
+
+.button {
+	border-radius: 4px;
+	background-color: #80b918;
+	border: none;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	padding: 14px;
+	width: fit-content;
+	transition: all 0.5s;
+	cursor: pointer;
+  }
+
+  .button{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+
+  .button:after {
+	content: '→';
+	position: absolute;
+	background-color: #80b918;
+	opacity: 0;
+	top: 14px;
+	padding-right: 5px;
+	right: 0px!important;
+	transition: 0.5s;
+  }
+
+  .button:hover{
+	padding-right: 24px;
+	background-color: #80b918;
+	padding-left:8px;
+  }
+
+  .button:hover:after {
+	opacity: 1;
+	right: 0px;
+  }
+
+/* .hero-text>span, .hero-h1 {
+	padding-left: 8vh;
+
+} */
 
 /* @media screen and (max-width: 600px) {
 	.wrapper .static-txt {
@@ -182,7 +244,7 @@ div.circle ul li a {
 
 /* Footer CSS */
 footer {
-	background-color: black;
+	background-color: #101319;
 }
 .rounded-social-buttons {
 	text-align: center;
