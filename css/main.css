@@ -178,11 +178,6 @@ div.circle ul li a {
 	font-size: 18px;
 	padding: 14px;
 	width: fit-content;
-	transition: all 0.5s;
-	cursor: pointer;
-  }
-
-  .button{
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
@@ -209,6 +204,56 @@ div.circle ul li a {
   .button:hover:after {
 	opacity: 1;
 	right: 0px;
+  }
+
+.portfolio-1 {
+	border-radius: 10px;
+	background-color: #DA6B4C;
+	box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.117);"
+}
+.read-time {
+	border:1px solid rgba(255, 255, 255, 0.746);
+	border-radius: 3rem;
+	font-weight: bold!important;
+	background-color:rgba(255, 255, 255, 0.438);
+}
+
+.button-portfolio {
+	border-radius: 4px;
+	background-color: white;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	width: fit-content;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button-portfolio::after {
+	content: '→';
+	position: absolute;
+	background-color: white;
+	color: black;
+	opacity: 0;
+	top: 8px;
+	padding-right: 10px;
+	right: 0px!important;
+	transition: 0.5s;
+  }
+
+  .button-portfolio:hover{
+	padding-right: 30px;
+	background-color: white;
+	color: black;
+	padding-left:8px;
+  }
+
+  .button-portfolio:hover:after {
+	opacity: 1;
+	right: -20px;
   }
 
 /* .hero-text>span, .hero-h1 {
