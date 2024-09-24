@@ -8,7 +8,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -86,6 +85,7 @@
 			</div>
 		  </div>
 	  </div>
+	  <section>
 	  <div class="container my-3">
 		<div class="row">
 			<div class="col-12">
@@ -95,7 +95,7 @@
 			</div>
 		</div>
 	  </div>
-	  <div class="container my-5  portfolio-1">
+	  <div class="container my-5  portfolio-1 reveal">
 		<div class="row">
 			<div class="col-sm-6 px-5 py-5">
 				<h2 class="text-left pt-5" style="font-weight: bold; color: #fdfffc;">
@@ -116,7 +116,7 @@
 			</div>
 		</div>
 	  </div>
-	  <div class="container my-5 portfolio-1" style="background-color: #29489b;">
+	  <div class="container my-5 portfolio-1 reveal" style="background-color: #29489b;">
 		<div class="row">
 			<div class="col-sm-6 px-5 py-5">
 				<h2 class="text-left pt-5" style="font-weight: bold; color: #fdfffc;">
@@ -137,7 +137,7 @@
 			</div>
 		</div>
 	  </div>
-	  <div class="container my-5 portfolio-1" style="background-color:#ffba08;">
+	  <div class="container my-5 portfolio-1 reveal" style="background-color:#ffba08;">
 		<div class="row">
 			<div class="col-sm-6 px-5 py-5">
 				<h2 class="text-left pt-5" style="font-weight: bold; color: black;">
@@ -158,7 +158,7 @@
 			</div>
 		</div>
 	  </div>
-	  <div class="container my-5 portfolio-1" style="background-color: #59341d;">
+	  <div class="container my-5 portfolio-1 reveal" style="background-color: #59341d;">
 		<div class="row">
 			<div class="col-sm-6 px-5 py-5">
 				<h2 class="text-left pt-5" style="font-weight: bold; color: #fdfffc;">
@@ -179,6 +179,7 @@
 			</div>
 		</div>
 	  </div>
+	</section>
 	  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 	  <script>
 		var typed = new Typed(".auto-type", {
@@ -187,6 +188,28 @@
 			backSpeed: 40,
 			looped: true,
 		})
+	  </script>
+
+	  <script>
+		window.addEventListener('scroll', reveal);
+
+		function reveal () {
+			var reveals = document.querySelectorAll('.reveal');
+
+			for(var i=0; i < reveals.length; i++) {
+				var windowheight = window.innerHeight;
+				var revealtop = reveals[i].getBoundingClientRect().top;
+				var revealpoint = 150;
+
+				if(revealtop < windowheight - revealpoint) {
+					reveals[i].classList.add('active');
+				}
+
+				else {
+					reveals[i].classList.remove('active');
+				}
+			}
+		}
 	  </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

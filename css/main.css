@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: "Lato", sans-serif;
 	/* background-color: #f8f9fa!important; */
@@ -206,10 +209,28 @@ div.circle ul li a {
 	right: 0px;
   }
 
+  .reveal {
+	position: relative;
+	transform: rotateY('200px');
+	opacity: 0;
+	transition: all 1s ease-in;
+  }
+
+  .reveal.active {
+	transform: translateY(20px);
+	opacity: 1;
+  }
+
+.portfolio-section {
+	background-image: url('/images/Frame\ 10.png');
+	background-repeat: no-repeat;
+	background-size: 100vw
+
+  }
 .portfolio-1 {
 	border-radius: 10px;
 	background-color: #DA6B4C;
-	box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.117);"
+	box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.117);
 }
 .read-time {
 	border:1px solid rgba(255, 255, 255, 0.746);
