@@ -242,6 +242,7 @@ div.circle ul li a {
 .button-portfolio {
 	border-radius: 4px;
 	background-color: white;
+	box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.117);
 	border: none;
 	color: black;
 	text-align: center;
@@ -275,6 +276,52 @@ div.circle ul li a {
   .button-portfolio:hover:after {
 	opacity: 1;
 	right: -20px;
+  }
+
+  .project-1 {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+  }
+
+  ol li::marker {
+	color: #334436;
+	font-weight: 800;
+	font-size: 20px;
+  }
+  .results {
+	font-size: 1.2em;
+   list-style-image: url('/images/check-square-fill.png');
+   list-style-position: outside;
+}
+.results::marker{
+   list-style-position: outside;
+   line-height: .1;
+   color: #DA6B4C;
+}
+
+  @media screen and (max-width: 600px) {
+	.project-1 {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+		padding-bottom: 8rem;
+		padding-top: 3rem;
+	  }
+
+	  .project-1-para {
+		margin: 0 !important;
+		padding: 0 !important;
+	  }
+
+	  .underline  hr {
+		width: 30%!important;
+	  }
+
+	  .project-image {
+		width: 100% !important;
+	  }
+
   }
 
 /* .hero-text>span, .hero-h1 {
