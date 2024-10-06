@@ -314,6 +314,12 @@ div.circle ul li a {
 .empathymap li::marker{
 	display: none !important;
 }
+/* .relicrhymes-ol li::marker {
+	color: #ffba08;
+	font-weight: 800;
+	font-size: 20px;
+
+} */
 
   @media screen and (max-width: 600px) {
 	.project-1 {
