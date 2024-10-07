@@ -39,7 +39,11 @@
 	  </nav>
   </head>
   <body>
-
+	<!-- Back to top button -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" stroke="black" stroke-width="1"/>
+	  </svg></button>
+	<!-- Back to top button -->
 	<div class="container-fluid main-hero py-3">
 		<div class="row">
 			<div class="col-sm-8 my-5 pl-5 hero-text">
@@ -81,7 +85,7 @@
 				<!-- <span class="badge px-2 py-2 my-2 read-time">Read time: 10 mins</span>  -->
 				<span class="badge px-2 py-2 my-2 mx-2 read-time">Platform: Mobile</span>
 				<div>
-					<a href="senseharmony.html" class="my-3 py-2 btn btn-primary button-portfolio">
+					<a href="senseharmony.html" target="_blank" class="my-3 py-2 btn btn-primary button-portfolio">
 					View Project
 				</a>
 				</div>
@@ -103,7 +107,7 @@
 				<!-- <span class="badge px-2 py-2 my-2 read-time">Read time: 10 mins</span>  -->
 				<span class="badge px-2 py-2 my-2 mx-2 read-time">Platform: Monitor</span>
 				<div>
-					<a href="fitshare.html" class=" my-3 py-2 btn btn-primary button-portfolio">
+					<a href="fitshare.html" target="_blank" class=" my-3 py-2 btn btn-primary button-portfolio">
 					View Project
 				</a>
 				</div>
@@ -125,7 +129,7 @@
 				<!-- <span class="badge px-2 py-2 my-2 read-time">Read time: 10 mins</span>  -->
 				<span class="badge px-2 py-2 my-2 mx-2 read-time">Platform: Monitor</span>
 				<div>
-					<a href="relicrhymes.html" class="my-3 py-2 btn btn-primary button-portfolio">
+					<a href="relicrhymes.html" target="_blank" class="my-3 py-2 btn btn-primary button-portfolio">
 					View Project
 				</a>
 				</div>
@@ -188,6 +192,27 @@
 			}
 		}
 	  </script>
+	  <script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
