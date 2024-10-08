@@ -350,6 +350,21 @@ div.circle ul li a {
   -webkit-transform: scale(0.9); /* Safari 3-8 */
   transform: scale(0.9);
 }
+
+.view-next-project {
+	border: 2px solid #80b918;
+	border-radius: 10px;
+	background-color: #80b918;
+	padding: 18px;
+	box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.117);
+}
+
+.view-next-project a:hover {
+	text-decoration: underline;
+	text-decoration-color: #fefefe;
+	color: #80b918 !important;
+}
+
 @media screen and (max-width: 1024px) {
 	.bento-box {
 		display: none;
