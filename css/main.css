@@ -14,7 +14,7 @@ body {
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: #80b918;
+	background-color: #aa4465;
 	stroke-width: 1;
 	cursor: pointer;
 	padding: 20px 25px;
@@ -28,6 +28,7 @@ body {
 
 .nav-link {
 	font-weight: 600;
+	font-size: 18px;
 }
 
 .navbar-light .navbar-toggler {
@@ -35,7 +36,7 @@ body {
 }
 
 .navbar-light .navbar-toggler-icon {
-	color: #80b918 !important;
+	color: #B56576 !important;
 }
 
 nav ul li a,
@@ -66,7 +67,7 @@ div.circle ul li a {
 	width: 1px;
 	height: 1px;
 	border-radius: 50%;
-	background: #80b918;
+	background: #B56576;
   }
   div.circle ul li a:hover:after {
 	-webkit-animation: circle 1.5s ease-in forwards;
@@ -83,11 +84,11 @@ div.circle ul li a {
     margin: auto;
     height: 1px;
     z-index: -1;
-    background: #80b918;
+    background: #B56576;
     border-radius: 100%;
   }
   100% {
-    background: #80b918;
+    background: #B56576;
     height: 5000%;
     width: 5000%;
     z-index: -1;
@@ -188,13 +189,13 @@ div.circle ul li a {
 	font-style: italic;
 }
 .hero-h1 span {
-	color: #80b918!important;
+	color: #B56576!important;
 	font-weight: 700;
 }
 
 .button {
 	border-radius: 4px;
-	background-color: #80b918;
+	background-color: #aa4465;
 	border: none;
 	color: #fff;
 	text-align: center;
@@ -210,7 +211,7 @@ div.circle ul li a {
   .button:after {
 	content: '→';
 	position: absolute;
-	background-color: #80b918;
+	background-color: #B56576;
 	opacity: 0;
 	top: 14px;
 	padding-right: 5px;
@@ -220,7 +221,7 @@ div.circle ul li a {
 
   .button:hover{
 	padding-right: 24px;
-	background-color: #80b918;
+	background-color: #B56576;
 	padding-left:8px;
   }
 
@@ -369,6 +370,7 @@ div.circle ul li a {
 	.bento-box {
 		display: none;
 	}
+
 }
 @media (min-width: 1025px) {
 	.bento-box-mobile {
@@ -466,20 +468,20 @@ footer {
 	font-size: 30px;
   }
   .rounded-social-buttons .social-button.linkedin {
-	background: #80b918;
+	background: #B56576;
   }
 
   .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-	color: #80b918;
+	color: #B56576;
 	background: #fefefe;
 	border-color: #fefefe;
   }
   .rounded-social-buttons .social-button.instagram {
-	background: #80b918;
+	background: #B56576;
   }
 
   .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-	color: #80b918;
+	color: #B56576;
 	background: #fefefe;
 	border-color: #fefefe;
   }
