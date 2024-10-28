@@ -353,17 +353,31 @@ div.circle ul li a {
 }
 
 .view-next-project {
-	border: 2px solid #80b918;
+	border: 2px solid #aa4465;
 	border-radius: 10px;
-	background-color: #80b918;
-	padding: 18px;
+	background-color: #aa4465;
+	padding: 15px;
 	box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.117);
 }
 
 .view-next-project a:hover {
 	text-decoration: underline;
 	text-decoration-color: #fefefe;
-	color: #80b918 !important;
+	color: #aa4465 !important;
+}
+
+.back-to-home {
+	border: 2px solid #aa4465;
+	border-radius: 10px;
+	background-color: white;
+	padding: 15px;
+	box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.117);
+}
+
+.back-to-home a:hover {
+	text-decoration: underline;
+	text-decoration-color: #aa4465;
+	color: #aa4465 !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -468,20 +482,20 @@ footer {
 	font-size: 30px;
   }
   .rounded-social-buttons .social-button.linkedin {
-	background: #B56576;
+	background: #aa4465;
   }
 
   .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-	color: #B56576;
+	color: #aa4465;
 	background: #fefefe;
 	border-color: #fefefe;
   }
   .rounded-social-buttons .social-button.instagram {
-	background: #B56576;
+	background: #aa4465;
   }
 
   .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-	color: #B56576;
+	color: #aa4465;
 	background: #fefefe;
 	border-color: #fefefe;
   }
