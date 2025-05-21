@@ -248,6 +248,34 @@ div.circle ul li a {
 	background-size: 100vw
 
   }
+
+  .sidebar {
+	position: sticky;
+	top: 0px;
+  	overflow-y: scroll;
+  	max-height: 100vh;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.117);
+	border-bottom: 1px solid #aa4465;
+  }
+
+  .toc a{
+	color: black;
+  }
+
+  .toc-contents {
+	font-weight: bolder;
+	font-size: 22px;
+  }
+  .toc a.highlighted {
+	color: #aa4465;
+	border-left: 2px solid #aa4465;
+  }
+
+  .sidebar-ol {
+	font-size: 18px;
+	padding: 0 !important;
+  }
+
 .portfolio-1 {
 	border-radius: 10px;
 	background-color: #DA6B4C;
@@ -300,12 +328,12 @@ div.circle ul li a {
 	right: -20px;
   }
 
-  .project-1 {
+  /* .project-1 {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
 	padding-bottom: 3rem;
 	padding-top: 3rem;
-  }
+  } */
 
   ol li::marker {
 	color: #334436;
@@ -499,4 +527,53 @@ footer {
 	color: #aa4465;
 	background: #fefefe;
 	border-color: #fefefe;
+  }
+
+  /* Circle counter */
+  @keyframes progress {
+	0% { --percentage: 0; }
+	100% { --percentage: var(--value); }
+  }
+
+  @property --percentage {
+	syntax: '<number>';
+	inherits: true;
+	initial-value: 0;
+  }
+
+  [role="progressbar"] {
+	--percentage: var(--value);
+	--primary: #369;
+	--secondary: #adf;
+	--size: 200px;
+	animation: progress 2s 0.5s forwards;
+	width: var(--size);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	place-items: center;
+  }
+
+  [role="progressbar"]::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+	mask: radial-gradient(white 55%, transparent 0);
+	mask-mode: alpha;
+	-webkit-mask: radial-gradient(#0000 55%, #000 0);
+	-webkit-mask-mode: alpha;
+  }
+
+  [role="progressbar"]::after {
+	counter-reset: percentage var(--value);
+	content: counter(percentage) '%';
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: calc(var(--size) / 5);
+	color: var(--primary);
   }
