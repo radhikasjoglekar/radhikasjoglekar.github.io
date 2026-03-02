@@ -188,6 +188,11 @@ div.circle ul li a {
 	color: #343a40;
 	font-style: italic;
 }
+/* mark {
+	background-color: #aa4465!important;
+	color: #ffff;
+} */
+
 .hero-h1 span {
 	color: #aa4465!important;
 	font-weight: 700;
